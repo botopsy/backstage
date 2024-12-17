@@ -2,6 +2,15 @@
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
+  name: botopsy
+  description: "The central organization in our company."
+spec:
+  type: organization
+  children: [infra]
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
   name: infra
 spec:
   type: team
